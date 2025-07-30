@@ -15,19 +15,17 @@
                 win_mode: win_mode {
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
-                        bindings
-                                = <&macro_tap &bt BT_SEL 0>
-                                , <&macro_tap &to 0>
-                                ;
+                        wait-ms = <10>;
+                        tap-ms = <10>;
+                        bindings = <&bt BT_SEL 0>, <&macro_wait_time 50>, <&to 0>;
                 };
                 
                 mac_mode: mac_mode {
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
-                        bindings
-                                = <&macro_tap &bt BT_SEL 1>
-                                , <&macro_tap &to 4>
-                                ;
+                        wait-ms = <10>;
+                        tap-ms = <10>;
+                        bindings = <&bt BT_SEL 1>, <&macro_wait_time 50>, <&to 4>;
                 };
         };
 

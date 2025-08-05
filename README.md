@@ -5,7 +5,7 @@ This configuration provides optimized layouts for the Corne keyboard with suppor
 ## Features
 
 - **Dual OS Support**: Dedicated layouts for macOS and Windows
-- **AeroSpace Integration**: Hyper key macro for window management
+- **AeroSpace Integration**: Hyper key modifier function for window management
 - **Bluetooth Management**: Easy switching between 5 devices
 - **Media Controls**: Volume, playback, and navigation
 - **Function Keys**: Full F1-F12 support
@@ -76,7 +76,7 @@ Windows versions of the above layers with modified modifier keys:
 ## Special Features
 
 ### Hyper Key
-The `&hyper` macro sends `Ctrl+Alt+Cmd` simultaneously, perfect for AeroSpace window management shortcuts without conflicts.
+The `&kp LC(LA(LGUI))` modifier function sends `Ctrl+Alt+Cmd` simultaneously, perfect for AeroSpace window management shortcuts without conflicts. This uses ZMK's modifier functions to properly maintain the key combination state.
 
 ### Bluetooth Management
 - **BT CLR**: Clear all bluetooth pairings
